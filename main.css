@@ -1,0 +1,75 @@
+/* DOCUMENT COLORS
+background-color: #ebe9c0
+pageHeader & boxes: #94785d
+all other text except menu & yelp links: #ebe9c0
+menu & yelp links: #ffffff
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7ede4;
+    color: #ebe9c0;
+}
+.pageHeader {
+    text-align: center;
+    color: #94785d;
+}
+
+/* .list is the flex container for child .shop*/
+.list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+/* .shop is the flex child item of parent .list */
+.shop {
+    text-align: "left";
+    width: 30%;
+    background-color: #94785d;
+    padding: 5px;
+    margin: 5px;
+    height: 90px;
+}
+
+.address {
+    text-align: "left";
+}
+
+/* .shop-links is flex container for child shop-links.a */
+.shop-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-end;
+    height: 60%;
+}
+
+/* .shop-links.a is the flex child item of parent .shop-links */
+.shop-links.a {
+    width: 20%;
+}
+
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+.shop-name {
+    font-size: 24px;
+}
+
+a.storeLink {
+    color: #ebe9c0;
+}
