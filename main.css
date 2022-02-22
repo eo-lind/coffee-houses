@@ -1,18 +1,18 @@
 /* DOCUMENT COLORS
-background-color: #ebe9c0
-pageHeader & boxes: #94785d
-all other text except menu & yelp links: #ebe9c0
-menu & yelp links: #ffffff
+background-color: #f3e5f5
+pageHeader & boxes: #c0b3c2
+text: #000000
+
 */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f7ede4;
-    color: #ebe9c0;
+    background-color: #f3e5f5;
+    color: #000000;
 }
 .pageHeader {
     text-align: center;
-    color: #94785d;
+    color: #000000;
 }
 
 /* .list is the flex container for child .shop*/
@@ -21,17 +21,18 @@ body {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
-    align-content: flex-start;
+    align-content: stretch;
 }
-
+        
 /* .shop is the flex child item of parent .list */
 .shop {
     text-align: "left";
-    width: 30%;
-    background-color: #94785d;
-    padding: 5px;
+    width: 200px;
+    background-color: #c0b3c2;
+    padding: 10px 20px 0px 20px;
     margin: 5px;
     height: 90px;
+    border: 1px dotted black;
 }
 
 .address {
@@ -42,7 +43,7 @@ body {
 .shop-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     align-content: flex-end;
     height: 60%;
@@ -50,15 +51,15 @@ body {
 
 /* .shop-links.a is the flex child item of parent .shop-links */
 .shop-links.a {
-    width: 20%;
+    align-self: flex-end;
 }
 
 a:link {
-    color: #ffffff;
+    color: #000000;
 }
 
 a:visited {
-    color: #ffffff;
+    color: #000000;
 }
 
 a:hover {
@@ -67,9 +68,5 @@ a:hover {
 
 
 .shop-name {
-    font-size: 24px;
-}
-
-a.storeLink {
-    color: #ebe9c0;
+    font-size: 1.25em;
 }
